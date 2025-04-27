@@ -5,15 +5,12 @@ from threading import Timer
 
 app = Flask(_name_)
 
-
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root' 
 app.config['MYSQL_PASSWORD'] = 'password'  
 app.config['MYSQL_DB'] = 'medication_db'
 
-
 mysql = MySQL(app)
-
 
 medication_data = []
 
